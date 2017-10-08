@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>rezerwacja</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+   <h1>Bilety</h1>
+    <form action="#" onclick="showCoords(event)">
+        
+         <select name="poziom" id="poziom">
+            <option value="parter" selected>parter</option>
+            <option value="balkon">balkon</option>
+        </select>
+       
+        <input type="checkbox" id="wybor1" class="wybor" name="wybor">
+        <input type="checkbox" id="wybor2" class="wybor" name="wybor">
+        <input type="checkbox" id="wybor3" class="wybor" name="wybor">
+        
+        <select name="cena" id="cena"  size="3">
+            <optgroup label="parter">
+                <option value="25" class="cena">ulgowy 25zł </option>
+                <option value="30" class="cena">normalny 30zł </option>
+            </optgroup>
+            <optgroup label="balkon">
+                <option value="35" class="cena">ulgowy 35zł </option>
+                <option value="40" class="cena">normalny 40zł </option>
+            </optgroup>
+        </select>
+    </form>
+    <p id="wynik"></p>
+</body>
+</html>
