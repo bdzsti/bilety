@@ -21,8 +21,8 @@ function wybor(){
                 document.querySelector('optgroup[label="balkon"]').style.display = 'none';
                 document.querySelector('optgroup[label="parter"]').style.display = "block";
              } else {
+                document.querySelector('optgroup[label="balkon"]').style.display = "block";
                 document.querySelector('optgroup[label="parter"]').style.display = 'none';
-                document.querySelector('optgroup[label="balkon"]').style.display = "block"; 
              }
         } else {
             document.getElementById('wynik').innerHTML += "wylaczony " + i +" - " + this.id + "<br />";
